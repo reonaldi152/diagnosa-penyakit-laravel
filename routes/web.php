@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DiseaseController;
+use App\Http\Controllers\Admin\SymptomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +23,11 @@ Route::get('/logout', [AuthController::class, 'logout']);
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('admin')->group(function () {
+});
+
+Route::resource('diseases', DiseaseController::class);
+Route::resource('symptoms', SymptomController::class);
+
+
