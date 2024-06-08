@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>{{ isset($symptom) ? 'Edit Symptom' : 'Add New Symptom' }}</h1>
-    <form action="{{ isset($symptom) ? route('admin.symptoms.update', $symptom->id) : route('admin.symptoms.store') }}" method="POST">
+    <form action="{{ isset($symptom) ? route('symptoms.update', $symptom->id) : route('symptoms.store') }}" method="POST">
         @csrf
         @if(isset($symptom))
             @method('PUT')

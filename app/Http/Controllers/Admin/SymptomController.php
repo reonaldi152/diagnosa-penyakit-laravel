@@ -16,7 +16,7 @@ class SymptomController extends Controller
 
     public function create()
     {
-        return view('symptoms.form');
+        return view('admin.symptoms.form');
     }
 
     public function store(Request $request)
@@ -29,7 +29,7 @@ class SymptomController extends Controller
             'name' => $request->input('name'),
         ]);
 
-        return redirect()->route('symptoms.index');
+        return redirect()->route('admin.symptoms.index');
     }
 
     public function edit(Symptom $symptom)
