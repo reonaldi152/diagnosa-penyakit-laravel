@@ -24,7 +24,7 @@ Route::get('/logout', [AuthController::class, 'logout']);
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [PageController::class, 'user'])->middleware('auth:admin');
+Route::get('/', [PageController::class, 'admin'])->middleware('auth:admin');
 
 Route::get('/admin', function () {
     return view('admin.index');

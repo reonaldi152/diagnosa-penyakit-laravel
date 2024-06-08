@@ -29,7 +29,7 @@ class SymptomController extends Controller
             'name' => $request->input('name'),
         ]);
 
-        return redirect()->route('admin.symptoms.index');
+        return redirect()->route('symptoms.index');
     }
 
     public function edit(Symptom $symptom)

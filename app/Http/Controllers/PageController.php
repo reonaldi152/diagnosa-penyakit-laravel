@@ -8,7 +8,7 @@ class PageController extends Controller
 {
     public function user()
     {
-        return view("user.welcome");
+        return view("admin.index");
     }
 
     public function admin()
