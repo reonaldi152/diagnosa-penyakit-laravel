@@ -1,0 +1,71 @@
+{
+    "code": 200,
+    "status": "success",
+    "message": "Berhasil mendapatkan riwayat diagnosis",
+    "data": [
+        {
+            "id": 2,
+            "user_id": 1,
+            "symptoms": [
+                1,
+                2,
+                3
+            ],
+            "diseases": [
+                1,
+                2
+            ],
+            "created_at": "2024-06-08T09:51:42.000000Z",
+            "updated_at": "2024-06-08T09:51:42.000000Z",
+            "symptoms_data": [
+                {
+                    "id": 1,
+                    "name": "bersin bersin",
+                    "created_at": "2024-06-08T02:20:19.000000Z",
+                    "updated_at": "2024-06-08T02:20:19.000000Z"
+                },
+                {
+                    "id": 2,
+                    "name": "Sakit kepala, belakang tangan dan kaki",
+                    "created_at": "2024-06-08T02:20:58.000000Z",
+                    "updated_at": "2024-06-08T02:20:58.000000Z"
+                },
+                {
+                    "id": 3,
+                    "name": "nafas berat",
+                    "created_at": "2024-06-08T02:21:52.000000Z",
+                    "updated_at": "2024-06-08T02:21:52.000000Z"
+                }
+            ],
+            "diseases_data": [
+                {
+                    "id": 1,
+                    "name": "influenza",
+                    "description": "influenza adalah",
+                    "additional_symptoms": "[\"Demam\",\"letih dan lesu\",\"Kehilangan selera makan\"]",
+                    "created_at": "2024-06-08T02:24:11.000000Z",
+                    "updated_at": "2024-06-08T02:24:11.000000Z"
+                },
+                {
+                    "id": 2,
+                    "name": "bronkitis",
+                    "description": "bronkitis adalah",
+                    "additional_symptoms": "[\"Batuk Berdahak\",\"Sesak nafas ketika melakukan olahraga atau aktivitas ringan\",\"Sering menderita infeksi pernafasan(misalnya flu)\",\"Nafas berat\"]",
+                    "created_at": "2024-06-08T02:26:41.000000Z",
+                    "updated_at": "2024-06-08T02:26:41.000000Z"
+                }
+            ],
+            "user": {
+                "id": 1,
+                "name": "reo",
+                "email": "reo@gmail.com",
+                "email_verified_at": null,
+                "two_factor_secret": null,
+                "two_factor_recovery_codes": null,
+                "two_factor_confirmed_at": null,
+                "created_at": "2024-06-08T03:38:17.000000Z",
+                "updated_at": "2024-06-08T03:38:17.000000Z"
+            }
+        }
+    ]
+}

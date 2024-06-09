@@ -1,0 +1,78 @@
+
+{
+    "code": 200,
+    "status": "success",
+    "message": "Berhasil mendapatkan data",
+    "data": [
+        {
+            "disease": {
+                "id": 1,
+                "name": "influenza",
+                "description": "influenza adalah",
+                "additional_symptoms": "[\"Demam\",\"letih dan lesu\",\"Kehilangan selera makan\"]",
+                "created_at": "2024-06-08T02:24:11.000000Z",
+                "updated_at": "2024-06-08T02:24:11.000000Z",
+                "symptoms": [
+                    {
+                        "id": 1,
+                        "name": "bersin bersin",
+                        "created_at": "2024-06-08T02:20:19.000000Z",
+                        "updated_at": "2024-06-08T02:20:19.000000Z",
+                        "pivot": {
+                            "disease_id": 1,
+                            "symptom_id": 1
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sakit kepala, belakang tangan dan kaki",
+                        "created_at": "2024-06-08T02:20:58.000000Z",
+                        "updated_at": "2024-06-08T02:20:58.000000Z",
+                        "pivot": {
+                            "disease_id": 1,
+                            "symptom_id": 2
+                        }
+                    }
+                ]
+            },
+            "matching_symptoms": 2,
+            "total_symptoms": 2,
+            "score": 100
+        },
+        {
+            "disease": {
+                "id": 2,
+                "name": "bronkitis",
+                "description": "bronkitis adalah",
+                "additional_symptoms": "[\"Batuk Berdahak\",\"Sesak nafas ketika melakukan olahraga atau aktivitas ringan\",\"Sering menderita infeksi pernafasan(misalnya flu)\",\"Nafas berat\"]",
+                "created_at": "2024-06-08T02:26:41.000000Z",
+                "updated_at": "2024-06-08T02:26:41.000000Z",
+                "symptoms": [
+                    {
+                        "id": 3,
+                        "name": "nafas berat",
+                        "created_at": "2024-06-08T02:21:52.000000Z",
+                        "updated_at": "2024-06-08T02:21:52.000000Z",
+                        "pivot": {
+                            "disease_id": 2,
+                            "symptom_id": 3
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "name": "Adanya pembengkakan di pergelangan kaki, kaki dan tungkai kaki kiri dan kanan.",
+                        "created_at": "2024-06-08T02:22:10.000000Z",
+                        "updated_at": "2024-06-08T02:22:10.000000Z",
+                        "pivot": {
+                            "disease_id": 2,
+                            "symptom_id": 4
+                        }
+                    }
+                ]
+            },
+            "matching_symptoms": 1,
+            "total_symptoms": 2,
+            "score": 50
+        }
+    ]
+}
