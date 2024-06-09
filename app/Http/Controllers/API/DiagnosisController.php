@@ -71,11 +71,11 @@ class DiagnosisController extends Controller
         // dd($diseaseIds);
 
         // Simpan riwayat diagnosis
-        // DiagnosisHistory::create([
-        //     'user_id' => Auth::id(),
-        //     'symptoms' => json_encode($symptomIds),
-        //     'diseases' => json_encode($diseaseIds),
-        // ]);
+        DiagnosisHistory::create([
+            'user_id' => Auth::id(),
+            'symptoms' => json_encode($symptomIds),
+            'diseases' => json_encode($diseaseIds),
+        ]);
 
         // Kembalikan hasil dalam format JSON
         return ResponseFormatter::success($results, "Berhasil mendapatkan data");
