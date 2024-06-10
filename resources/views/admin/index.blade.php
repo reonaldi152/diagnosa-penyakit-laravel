@@ -9,8 +9,9 @@
 <body>
     <div class="container">
         <h1>Admin Dashboard</h1>
-        <div class="buttons">
+        <div class="buttons" style="margin-left: 10%">
             <a href="/admin/diseases">Manage Diseases</a>
+            <br><br>
             <a href="/admin/symptoms">Manage Symptoms</a>
         </div>
     </div>

@@ -8,31 +8,37 @@
 </head>
 <body>
     <h1>Symptoms</h1>
-    <a href="{{ route('symptoms.create') }}">Add New Symptom</a>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($symptoms as $symptom)
+    <div style="margin-left: 3%">
+        <a href="{{ route('admin.index') }}" class="btn">Home</a>
+        <br><br>
+        <a href="{{ route('symptoms.create') }}">Add New Symptom</a>
+        <table>
+            <thead>
                 <tr>
-                    <td>{{ $symptom->id }}</td>
-                    <td>{{ $symptom->name }}</td>
-                    <td>
-                        <a href="{{ route('symptoms.edit', $symptom->id) }}">Edit</a>
-                        <form action="{{ route('symptoms.destroy', $symptom->id) }}" method="POST" style="display:inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit">Delete</button>
-                        </form>
-                    </td>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
                 </tr>
-            @endforeach
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach($symptoms as $symptom)
+                    <tr>
+                        <td>{{ $symptom->id }}</td>
+                        <td>{{ $symptom->name }}</td>
+                        <td>
+                            <a href="{{ route('symptoms.edit', $symptom->id) }}">Edit</a>
+                            <br><br>
+                            <form action="{{ route('symptoms.destroy', $symptom->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+   
 </body>
 </html>

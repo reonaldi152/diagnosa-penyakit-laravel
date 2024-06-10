@@ -34,7 +34,7 @@ class SymptomController extends Controller
 
     public function edit(Symptom $symptom)
     {
-        return view('symptoms.form', compact('symptom'));
+        return view('admin.symptoms.form', compact('symptom'));
     }
 
     public function update(Request $request, Symptom $symptom)
